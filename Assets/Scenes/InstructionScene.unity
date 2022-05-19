@@ -852,7 +852,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Climb all the way to the top to escape the evil otter prison. \n\nMove:
-    W,A,S,D or arrow keys\nJump: Space key"
+    W,A,S,D or arrow keys\nJump: Space key\nQuit: Escape key"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7a25297b93e7614880939910cfe7dac, type: 2}
   m_sharedMaterial: {fileID: 8860350265735090535, guid: f7a25297b93e7614880939910cfe7dac, type: 2}

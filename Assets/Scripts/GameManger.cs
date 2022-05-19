@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManger : MonoBehaviour
 {
@@ -47,7 +46,7 @@ public class GameManger : MonoBehaviour
         }
         else if (scene.name == "InstructionScene")
         {
-            //InstructionScene();
+            InstructionScene();
         }
     }
 
@@ -67,6 +66,12 @@ public class GameManger : MonoBehaviour
         mainMenuPlayGameButton.onClick.AddListener(delegate { LoadSceneByNum(2); });
         mainMenuInstructionsButton.onClick.AddListener(delegate { LoadSceneByNum(1); });
         mainMenuExitButton.onClick.AddListener(delegate { OnExitGame(); });
+    }
+
+    private void InstructionScene()
+    {
+        var instructionBackButton = GameObject.Find("Button_InstructionScene_Back").GetComponent<Button>();
+        instructionBackButton.onClick.AddListener(delegate { LoadSceneByNum(0); });
     }
 
     // If the user clicks the Exit button, exit the game, whether the user is using the unity editor or hes playing the .exe version
